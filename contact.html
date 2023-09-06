@@ -51,47 +51,49 @@
         </div>
       </nav>
       <h1 style="color: brown; margin: 20px;" align="center">Get in Touch</h1>
-      <p class="bg-info-subtle m-3 p-4 fs-5 fst-italic">If you have any questions, comments, or suggestions, we'd love to hear from you. Please use the form below to get in touch with us.</p>
+      <p class="bg-warning-subtle m-3 p-4 fs-5 fst-italic">If you have any questions, comments, or suggestions, we'd love to hear from you. Please use the form below to get in touch with us.</p>
+      <p class="bg-success-subtle m-3 p-4 fs-5 fst-italic text-danger">All your details are confidential. Don't Worry!! and fill out the form.</p>
       <div class="container bg-info-subtle p-3">
-        <form class="row g-3">
+        <h2 style="color: brown; margin: 20px;" align="center">Inquiry Form</h2>
+        <form class="row g-3" action="insert.php" method="post">
           <div class="col-md-6">
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="floatingInput" placeholder="name" required>
+              <input type="text" class="form-control" id="floatingInput" placeholder="name" name="firstname" required>
               <label for="floatingInput">First Name</label>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="floatingInput" placeholder="name" required>
+              <input type="text" class="form-control" id="floatingInput" placeholder="name" name="lastname" required>
               <label for="floatingInput">Last Name</label>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name123@gmail.com" required>
+              <input type="email" class="form-control" id="floatingInput" placeholder="name123@gmail.com" name="emailid" required>
               <label for="floatingInput">Email</label>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="floatingInput" placeholder="city name" required>
+              <input type="text" class="form-control" id="floatingInput" placeholder="city name" name="city" required>
               <label for="floatingInput">City</label>
             </div>
           </div>
           <div class="col-md-12">
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="floatingInput" placeholder="company" >
+              <input type="text" class="form-control" id="floatingInput" placeholder="company" name="company">
               <label for="floatingInput">Company Name (optional)</label>
             </div>
           </div>
           <div class="col-md-12">
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="floatingInput" placeholder="text" required>
+              <input type="text" class="form-control" id="floatingInput" placeholder="text" name="subject" required>
               <label for="floatingInput">Subject</label>
             </div>
           </div>
           <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="message" style="height: 100px"></textarea>
             <label for="floatingTextarea2">Message</label>
           </div>
           <div class="col-12">
@@ -120,7 +122,7 @@
         </div>
       </div>
     </div>
-    <div class="row bg-info-subtle m-5 p-4">
+    <div class="row bg-danger-subtle m-5 p-4">
       <h4 align="center">Contact Us</h4><br><br>
       <i class="col-md-4 fa-solid fa-house"> 123 Anywhere St.,Any City,ST 123</i>
       <i class="col-md-2 fa-solid fa-phone"> 91+1234567890</i>
